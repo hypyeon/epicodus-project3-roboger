@@ -1,5 +1,5 @@
 # Mr. Roboger's Neighborhood 🏠
-by Hayeong Pyeon (https://www.hayeong.website)
+by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
 
@@ -7,7 +7,7 @@ by Hayeong Pyeon (https://www.hayeong.website)
 2. [Description](#description)
 3. [Setup Requirements](#setup-requirements)
 4. [Link](#link)
-5. [Test Driven Development](#tests)
+5. [Tests](#tests)
 6. [Known Bugs](#known-bugs)
 7. [License](#license)
 
@@ -49,10 +49,15 @@ Expected: "0, Beep!, Boop!, Won't you be my neighbor, friend?";
 Test: "The string replacement will take priority from 3, 2, and 1 in order.";  
 Code: replaceNumToPhrase(14);  
 Expected: "0, Beep!, Boop!, Won't you be my neighbor, friend?, 4, 5, 6, 7, 8, 9, Beep! Beep!, Boop! Won't you be my neighbor, friend?";   
+
+Test: "Any number in an array that does not include 1, 2, or 3 will remain as number.";  
+Code: replaceNumToPhrase(9);  
+Expected: "0, Beep!, Boop!, Won't you be my neighbor, friend?, 4, 5, 6, 7, 8, 9";
 ```
 ## Known Bugs
-- No issues found as of the last update. Feel free to reach out (hayeong.pyeon@gmail.com) if encountered any.
+- No issues found as of the last update. Feel free to [reach out](hayeong.pyeon@gmail.com) if encountered any.
 - Last updated: November 28, 2023
 
 ## License
-Copyright © 
+[MIT](/LICENSE.txt)
+Copyright © 2023 Hayeong Pyeon

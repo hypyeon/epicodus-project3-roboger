@@ -5,22 +5,7 @@ function getArray(maxNum) {
         numArr.push(i);
     }
     return numArr.map((num) => num.toString());
-};
-function getUserName() {
-    const nameValue = document.getElementById("name").value;
-    const userName = nameValue.trim();
-    const nameArr = userName.split(""); 
-    let convertedArr = nameArr.map((element) => {
-        return isNaN(element) ? element : Number(element);
-    });
-    for (let i = 0; i < convertedArr.length; i++) {
-        if (typeof convertedArr[i] !== "string") {
-            return 'friend';
-        } else {
-            return userName.charAt(0).toUpperCase() + userName.substring(1).toLowerCase();
-        }
-    };
-};
+}
 function replaceNumToPhrase(maxNum) {
     const numArr = getArray(maxNum);
     const oneTwoThreeArr = ["1", "2", "3"];
@@ -38,13 +23,20 @@ function replaceNumToPhrase(maxNum) {
         }
     });
     return newArr.join(", ");
-};
-
+}
 //UI logic: 
+function getUserName() {
+    const nameValue = document.getElementById("name").value;
+    const userName = nameValue.trim();
+    if (userName !== '' && !/^\d+$/.test(userName)) {
+        return userName.charAt(0).toUpperCase() + userName.substring(1).toLowerCase();
+    } else {
+        return 'friend';
+    }
+}
 function formHandler() {
     const form = document.querySelector("form");
     const result = document.getElementById("result");
-
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         const numValue = document.getElementById("number").value;
@@ -56,7 +48,7 @@ function formHandler() {
     form.addEventListener("reset", () => {
         result.classList.add("hidden");
     });
-};
+}
 window.onload = () => {
     formHandler();
 }
