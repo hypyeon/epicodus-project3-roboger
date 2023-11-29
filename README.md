@@ -30,7 +30,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 * Open `index.html` in your browser. 
 
 ## Link
-https://hypyeon.github.io/epicodus-project3-arrays-looping/
+https://hypyeon.github.io/epicodus-project3-roboger/
 
 ## Tests
 ```
@@ -55,7 +55,7 @@ Code: replaceNumToPhrase(9);
 Expected: "0, Beep!, Boop!, Won't you be my neighbor, friend?, 4, 5, 6, 7, 8, 9";
 ```
 ## Known Bugs
-- No issues found as of the last update. Feel free to [reach out](hayeong.pyeon@gmail.com) if encountered any.
+- No issues found as of the last update. Feel free to [reach out](mailto:hayeong.pyeon@gmail.com) if encountered any.
 - Last updated: November 28, 2023
 
 ## License
